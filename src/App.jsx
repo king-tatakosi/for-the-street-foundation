@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import {
   ArrowRight,
-  HandHeart,
   HeartHandshake,
   Image as ImageIcon,
   Landmark,
@@ -30,7 +29,7 @@ const NAV = [
   ['About', '#about'],
   ['Programs', '#programs'],
   ['Leadership', '#leadership'],
-  ['Get Involved', '#get-involved'],
+  ['Contact Us', '#contact'],
 ]
 
 function Header() {
@@ -225,7 +224,7 @@ function Leadership() {
 function ContactCard() {
   const hasDetails = org.email || org.phone
   return (
-    <article className="info-card is-contact" aria-labelledby="contact-card-title">
+    <article id="contact" className="info-card is-contact" aria-labelledby="contact-card-title">
       <h3 id="contact-card-title">
         <Mail size={22} aria-hidden="true" /> Contact us
       </h3>
@@ -311,14 +310,6 @@ function GetInvolved() {
             Give, volunteer or partner with us. Reach out and we will show you
             how you can help.
           </p>
-        </div>
-        <div className="actions">
-          <a className="btn btn-give" href={org.email ? `mailto:${org.email}?subject=Donate` : '#contact'}>
-            <HeartHandshake size={18} aria-hidden="true" /> Donate
-          </a>
-          <a className="btn btn-ghost" href={org.email ? `mailto:${org.email}?subject=Volunteer` : '#contact'}>
-            <HandHeart size={18} aria-hidden="true" /> Volunteer
-          </a>
         </div>
       </div>
       <div className="wrap info-cards">
