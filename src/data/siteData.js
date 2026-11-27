@@ -58,9 +58,9 @@ const activityInfo = [
   },
   {
     id: 'program-3',
-    title: 'Donation Program 3',
+    title: 'Giving Hope on the Streets',
     date: '',
-    location: '',
+    location: 'Accra',
     description:
       "This donation took place in Accra. Our volunteers, in their For The Street Foundation shirts, took to the streets to hand over gifts in person, stopping to talk, share a smile and remind each person that they are seen and valued. For us, giving is about the connection as much as what is in the bag.",
   },
